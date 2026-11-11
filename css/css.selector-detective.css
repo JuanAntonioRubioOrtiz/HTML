@@ -1,0 +1,27 @@
+#zaterdag .headliner{
+    color: red;
+}
+
+#zaterdag .headliner:hover{
+    color: black;
+}
+
+.tijd{
+    color: red;
+}
+
+.tijd:hover{
+    color: black;
+}
+
+.menuitem:hover{
+    color:red;
+}
+
+li{
+    color: blue;
+}
+
+li:hover{
+    color: black;
+}
