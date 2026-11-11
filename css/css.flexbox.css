@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    gap: 18px;
+}
+.kaartjes{
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+}
+
+.kaartje {
+    flex: 1;
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+}
+.blok {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgrey;
+}
