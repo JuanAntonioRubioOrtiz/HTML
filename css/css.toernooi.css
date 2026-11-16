@@ -1,0 +1,46 @@
+label{
+    font-weight: bold;
+}
+input, textarea{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+input[required]{
+    border-radius: 3px;
+}
+fieldset label{
+    font-style: italic;
+}
+button, select{
+    background-color: lightskyblue;
+}
+button:hover{
+    background-color: lightcoral;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea{
+    background-color: lightgoldenrodyellow;
+    border: solid lightsalmon;
+}
+#mail{
+    background-color: lightblue;
+}
+input[required]:invalid{
+    border-color: lightcoral;
+}
+form, fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.keuzes{
+    display: flex;
+    gap: 16px;
+}
+.acties{
+    display: flex;
+    justify-content: flex-end;
+}
+form{
+    margin: auto;
+    max-width: 460px;
+}

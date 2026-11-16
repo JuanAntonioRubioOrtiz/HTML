@@ -1,37 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tornooi</title>
+    <link rel="stylesheet" href="css/css.toernooi.css">
 </head>
 <body>
     <form>
-        <label for="tag">Gamertag</label>
-        <input type="text" id="tag" name="gamertag" required>
+        <fieldset>
+            <legend>Over jou</legend>
+            <label for="tag">Gamertag</label>
+            <input type="text" id="tag" name="gamertag" required placeholder="gamertag" minlength="3" maxlength="16">
 
-        <label for="mail">E-mailadres</label>
-        <input type="email" id="mail" name="email" required>
+            <label for="mail">E-mailadres</label>
+            <input type="email" id="mail" name="email" required placeholder="123@yahoo.com">
+    
+            <label for="password">Wachtwoord</label>
+            <input type="password" id="password" name="password" required>
+    
+            <label for="age">Leeftijd</label>
+            <input type="number" min="12" max="99" id="age" name="age" required >
+    
+            <label for="date">Geboortedatum</label>
+            <input type="date" id="date" name="Geboortedatum" required>
+        </fieldset>
 
-        <label for="age">Leeftijd</label>
-        <input type="number" min="12" id="age" name="age" required >
-
-        <p>Welk platform?</p>
-        <input type="radio" id="pc" name="platform" value="pc">
-        <label for="pc">PC</label>
-        <input type="radio" id="console" name="platform" value="console">
-        <label for="console">Console</label>
-
-        <label for="team">Team</label>
-        <select name="team" id="team">
-            <option>Team Rood</option>
-            <option>Team Blauw</option>
-        </select>
-
-        <label for="motivatie">Waarom wil je mee doen?</label>
-        <textarea name="motivatie" id="motivatie"></textarea>
+        <fieldset>
+            <legend>Toernooi</legend>
+            <div class="keuzes">
+                <div>Platform:</div>
+                <div><input type="radio" id="pc" name="platform" value="pc">
+                <label for="pc">PC</label></div>
+                <div><input type="radio" id="console" name="platform" value="console">
+                <label for="console">Console</label></div>
+                <div><input type="radio" id="mobiel" name="platform" value="mobiel">
+                <label for="mobiel">Mobiel</label></div>
+            </div>
+    
+            <div class="keuzes">
+                <div>Dagen:</div>
+                <div><input type="checkbox" id="za" name="dagen" value="za">
+                <label for="za">Zaterdag</label></div>
+                <div><input type="checkbox" id="zo" name="dagen" value="zo">
+                <label for="zo">Zondag</label></div>
+            </div>
+    
+            <p>
+                <label for="land">Land</label>
+                <select id="land" name="land" required>
+                    <option>Nederland</option>
+                    <option>België</option>
+                    <option>Duitsland</option>
+                    <option>Spanje</option>
+                </select>
+            </p>
+    
+            <label for="opm">Opmerking</label>
+            <textarea id="opm" name="opm" rows="3"></textarea>
+        </fieldset>
         
-        <button type="submit">Meld me aan</button>
+        <div class="acties">
+            <button type="submit">Meld je aan</button>
+        </div>
     </form>
 </body>
 </html>
