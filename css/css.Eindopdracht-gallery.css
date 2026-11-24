@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-image: url(../images/carboncillo-wallpaper.jpg!d);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: darkgray;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    padding: 1rem;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica;
+}
+.logo{
+    font-family: helvetica thin;
+    font-size: larger;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-top: 1rem;
+    cursor: pointer;
+    transform: 0.2s;
+    border-radius: 25px;
+}
+img:hover{
+    transform: scale(1.03);
+}
+figcaption{
+    text-align: center;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica;
+    background-color: darkgray;
+    border-radius: 25px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin: inherit;
+}
+@media (min-width: 40rem) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 64rem) {
+    main{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.logo, nav, figcaption{
+    color: white;
+}

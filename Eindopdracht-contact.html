@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindopdracht-Contact</title>
+    <link rel="stylesheet" href="css/css.Eindopdracht-contact.css">
+</head>
+<body>
+    <header>
+        <span class="logo"><a href="Eindopdracht-home.html">Juan Antonio Rubio Ortiz</a></span>
+        <nav>
+            <a href="Eindopdracht-home.html">Home</a>
+            <a href="Eindopdracht-gallery.html">Gallery</a>
+        </nav>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Contact:</legend>
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="Naam" required placeholder="jou naam">
+
+            <label for="mail">E-mailadres</label>
+            <input type="email" id="mail" name="E-mailadres" required placeholder="abc213@yahoo.com">
+
+            <label for="password">Wachtwoord</label>
+            <input type="password" id="password" name="Wachtwoord" required>
+
+            <label for="age">Leeftijd</label>
+            <input type="number" id="age" name="Leeftijd" min="0" max="99" required>
+
+            <label for="date">Geboortedatum</label>
+            <input type="date" id="date" name="Geboortedatum" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="Gender">
+                <option>Man</option>
+                <option>Vrouw</option>
+                <option>anders</option>
+            </select>
+
+            <label for="anders">Andere gender:</label>
+            <textarea name="andere gender" id="anders" placeholder="optioneel"></textarea>
+            <button type="submit">Meld je aan</button>
+        </fieldset>
+    </form>
+</body>
+</html>
